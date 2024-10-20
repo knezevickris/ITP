@@ -1,0 +1,56 @@
+.header {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.number-infected {
+    margin: 0 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-side {
+    text-align: left;
+}
+
+.right-side {
+    text-align: right;
+}
+
+.add-button {
+    width: 150px;
+    height: 30px;
+}
+
+.container {
+    text-align: center;
+}
+
+
+.center-table {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px 16px;
+}
+
+th {
+    background-color: lightgray;
+    padding: 5px 12px;
+}
+
+td, th {
+    border: 1px solid darkgray;
+}
+
+.delete {
+    cursor: pointer;
+}
