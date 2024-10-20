@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ITP prvi kolokvijum - Putovanja</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <div class="naslov">
+                <h1 id="naslov">Putovanja</h1>
+            </div>
+            <table class="putovanja">
+                <tr>
+                    <td class="meni">
+                        <div onclick="redirectToPage()" onmouseenter="showImage('lastMinute')" onmouseleave="hideImage('lastMinute')" class="opcija">LAST MINUTE</div>
+                        <div onclick="redirectToPage()" class="opcija" onmouseenter="showImage('gradoviEvrope')" onmouseleave="hideImage('gradoviEvrope')">Gradovi Evrope</div>
+                        <div onclick="redirectToPage()" class="opcija" onmouseenter="showImage('zima')" onmouseleave="hideImage('zima')">Zima</div>
+                        <div onclick="redirectToPage()" class="opcija" onmouseenter="showImage('dDestinacije')" onmouseleave="hideImage('dDestinacije')">Daleke destinacije</div>
+                    </td>
+                    <td class="desni">
+                        <img src="img/lastMinute.jpg" alt="last_minute" id="lastMinute" hidden/>
+                        <img src="img/gradoviEvrope.jpg" alt="gradovi_Evrope" id="gradoviEvrope" hidden/>
+                        <img src="img/zima.jpg" alt="zima" id="zima" hidden/>
+                        <img src="img/dalekeDestinacije.jpg" alt="daleke_destinacije" id="dDestinacije" hidden/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footerBox">
+            <div class="footer">
+                &copy;Copyright - 2023 - <a style="text-decoration: none;" href="index.html">Internet tehnologije i programiranje</a>
+            </div> 
+        </div>
+    </body>
+</html>

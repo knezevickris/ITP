@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Destinacije</title>
+    </head>
+    <body>
+        <div class="content">
+        <table class="tabela">
+            <tr>
+                <th rowspan="2">Destinacija</th>
+                <th rowspan="2">Polazak</th>
+                <th rowspan="2">Naziv hotela</th>
+                <th colspan="3" id="brNocenja">Broj nocenja[&euro;]</th>
+            </tr>
+            <tr>
+                <th>7</th>
+                <th>10</th>
+                <th>11</th>
+            </tr>
+
+            <tr>
+                <td>Jahorina</td>
+                <td>25.12.</td>
+                <td><a style="text-decoration: none;" href="https://www.capital.ba/iza-batagon-ostao-dug-od-160-000-km-ugaseni-telefoni-i-blokirani-racuni/">Batagon</a></td>
+                <td>312</td>
+                <td>361</td>
+                <td>386</td>
+            </tr>
+            <tr>
+                <td>Kopaonik</td>
+                <td>26.12.</td>
+                <td><a style="text-decoration: none;" href="https://www.kraljevicardaci.com/">Kraljevi cardaci</a></td>
+                <td>306</td>
+                <td>354</td>
+                <td>374</td>
+            </tr>
+            <tr>
+                <td>Zlatibor</td>
+                <td>26.12.</td>
+                <td><a style="text-decoration: none;" href="https://www.monazlatibor.com/">Mona</a></td>
+                <td>299</td>
+                <td>333</td>
+                <td>351</td>
+            </tr>
+            <tr>
+                <td>Hurgada</td>
+                <td>30.12.</td>
+                <td><a style="text-decoration: none;" href="https://www.kingtut.com/">King Tut</a></td>
+                <td>458</td>
+                <td>535</td>
+                <td>550</td>
+            </tr>
+            <tr>
+                <td>Dubai</td>
+                <td>27.12.</td>
+                <td><a style="text-decoration: none;" href="https://www.atanahotel.com/">Atana Hotel</a></td>
+                <td>350</td>
+                <td>432</td>
+                <td>463</td>
+            </tr>
+            <tr>
+                <td>Bali</td>
+                <td>29.12.</td>
+                <td><a style="text-decoration: none;" href="https://www.nandinihotelresort.com/">Nandini Jungle Resort</a></td>
+                <td>510</td>
+                <td>543</td>
+                <td>567</td>
+            </tr>
+        </table>
+        <form class="forma">
+            <label>Korisnicko ime:</label><br/>
+            <input type="text" placeholder="Username" id="inUsername"><br/>
+            <label>Lozinka:</label><br/>
+            <input type="password" placeholder="Password" id="inPassword"><br/>
+            <label>Izaberite destinaciju:</label><br/>
+            <select id="slDestinacije" onchange="provjeraSelectPolja()">
+                <option value="Jahorina">Jahorina</option>
+                <option value="Kopaonik">Kopaonik</option>
+                <option value="Zlatibor">Zlatibor</option>
+                <option value="Hurgada">Hurgada</option>
+                <option value="Dubai">Dubai</option>
+                <option value="Bali">Bali</option>
+            </select><br/>
+            <label>Trajanje aranzmana:</label><br/>
+            <input type="radio" name="rdTrajanje" value="7">7<br/>
+            <input type="radio" name="rdTrajanje" value="10">10<br/>
+            <input type="radio" value="11" name="rdTrajanje">11<br/>
+            <div id="divBrZvjezdica">
+                <label>Broj zvjezdica hotela:</label><br/>
+                <input type="radio" name="rdBroj" value="3">3<br/>
+                <input type="radio" name="rdBroj" value="4">4<br/>
+                <input type="radio" name="rdBroj" value="5">5<br/>
+            </div>
+            <button type="submit" id="btnRezervisi" onclick="provjeraRezervacije()">Rezervisi</button>
+        </form>
+    </div>
+    <div class="footerBox">
+        <div class="footer">
+            &copy;Copyright - 2023 - <a style="text-decoration: none;" href="index.html">Internet tehnologije i programiranje</a>
+        </div>
+    </div>
+    </body>
+</html>

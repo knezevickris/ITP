@@ -1,0 +1,136 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: url(img/pozadina.jpg);
+    background-size: cover;
+}
+
+.content {
+    background-color: rgb(234, 234, 234, 0.7);
+}
+
+#naslov {
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 7px;
+    font-size: 45px;
+    text-align: center;
+    padding: 20px;
+}
+
+.putovanja {
+    width: 100%;
+}
+
+.meni {
+    text-align: left;
+    width: 50%;
+    height: 330px;
+}
+
+
+.desni img {
+    border: solid #EAEAEA 3px;
+    border-radius: 2px;
+    width: 640px;
+    height: 320px;
+    float: right;
+    display: none;
+}
+
+
+.opcija {
+    color: white;
+    background-color: #87CEFA;
+    border-radius: 2px;
+    font-size: 21px;
+    margin: 15px;
+    list-style: none;
+    width: fit-content;
+    padding: 8px;
+}
+
+.opcija:hover {
+    cursor: pointer;
+    color: #87CEFA;
+    background-color: white;
+    border-radius: 10px;
+    border: 0.5px solid #87CEFA;
+}
+
+.footerBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    font-style: italic;
+    line-height: 30px;
+}
+
+.tabela {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    
+}
+
+.tabela tr th,
+.tabela tr td {
+    width: 16.7%;
+    line-height: 20px;
+}
+
+.tabela th {    
+    background-color: #63B8FF;
+    color: white;
+}
+
+.tabela th:not(:last-child) {
+    border-right: 1px solid white;
+}
+
+#brNocenja {
+    border-bottom: 1px white solid;
+}
+
+.tabela tr {
+    background-color: #B0E2FF;
+}
+
+.tabela tr:nth-child(odd) {
+    background-color: #E0EEEE;
+}
+
+.forma {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.forma input,
+.forma select {
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+
+#btnRezervisi {
+    color: white;
+    background-color: #63B8FF;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: white 1px solid;
+    font-size: 20px;
+}
+
+#divBrZvjezdica {
+    display: none;
+    text-align: center;
+}
